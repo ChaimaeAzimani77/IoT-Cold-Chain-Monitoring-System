@@ -1,5 +1,7 @@
 # ❄️ IoT Cold Chain Monitoring System
 
+> **Mini-Projet ioT** — ENSA d'Oujda | Filière GSEIR-4 | 2025/2026
+
 ## 📝 Description
 Ce projet consiste à concevoir un **système IoT intelligent et automatisé** pour la surveillance stricte de la chaîne du froid, conçu spécifiquement pour les **laboratoires d’analyses médicales**. Il permet le suivi en temps réel de la température et de l’humidité afin d'assurer la conservation optimale des produits hautement sensibles (échantillons biologiques et chimiques).
 La plage de conservation de ces échantillons est strictement définie **entre 2°C et 8°C**.
