@@ -10,14 +10,6 @@ La plage de conservation de ces échantillons est strictement définie **entre 2
 
 ## 📌 Problématique :
 Dans les domaines médical, alimentaire et logistique, une rupture de la chaîne du froid peut entraîner des pertes importantes. Il est donc essentiel de surveiller en continu les conditions environnementales et d’alerter rapidement en cas d’anomalie.
-
-## 🎯 Objectifs et Fonctionnalités
-* [cite_start]**Surveillance continue (Temps Réel)** : Mesure de la température et de l’humidité[cite: 6, 7].
-* [cite_start]**Détection automatique des anomalies** : Déclenchement d'un incident si la température sort de la plage (T < 2°C ou T > 8°C)[cite: 10].
-* [cite_start]**Gestion des seuils** : Possibilité pour l'administrateur de modifier les seuils critiques depuis l'interface[cite: 12].
-* [cite_start]**Accès Sécurisé** : Interface multi-utilisateurs gérant des rôles distincts (opérateurs et administrateur)[cite: 3, 6].
-* [cite_start]**Historisation et Traçabilité** : Archivage des mesures et détails des incidents[cite: 15, 16].
-* [cite_start]**Notifications** : Envoi d'alertes immédiates (Email, Telegram)[cite: 15].
   
 ## 🎯 Objectifs :
 - Mesurer la température et l’humidité en temps réel
@@ -44,8 +36,6 @@ Dans les domaines médical, alimentaire et logistique, une rupture de la chaîne
 - **Câbles de connexion**
 - **Alimentation**
 
----
-
 ## 💻 Partie Logicielle (Software) :
 
 ## 🧾 Technologies utilisées :
@@ -61,8 +51,6 @@ Dans les domaines médical, alimentaire et logistique, une rupture de la chaîne
 | **Telegram API** | Notifications |
 | **SMTP (Gmail)** | Envoi d’emails |
 
----
-
 ## 🧠 Architecture du projet :
 
 - **ESP** → Envoi des données
@@ -70,8 +58,6 @@ Dans les domaines médical, alimentaire et logistique, une rupture de la chaîne
 - **Base de données** → Stockage
 - **Dashboard Web** → Visualisation
 - **Système d’alerte** → Notification en temps réel
-
----
 
 ## 📊 Interface Web :
 
