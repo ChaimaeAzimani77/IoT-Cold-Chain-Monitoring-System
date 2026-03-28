@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard IoT – Température & Humidité</title>
+
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #eef3f8;
+            margin: 0;
+            padding: 25px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2a5d9f;
+            font-weight: 600;
+        }
+
+        /* ---- Layout ---- */
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+
+        /* ---- Card ---- */
+        .card {
+            width: 300px;
+            background: white;
+            border-radius: 16px;
+            padding: 22px;
+            text-align: center;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+            transition: 0.25s;
+            border: 1px solid #e5e9ef;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #4da3ff, #2f80ed);
+            color: white;
+            padding: 12px;
+            border-radius: 10px;
+            font-size: 18px;
+            margin-bottom: 18px;
+            font-weight: 600;
+        }
+
+        .value {
+            font-size: 48px;
+            font-weight: bold;
+            color: #2f2f2f;
+            margin: 12px 0;
+        }
+
+        .time {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        button {
+            padding: 10px 18px;
+            background: #4da3ff;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 15px;
+            font-weight: 600;
+        }
+
+        button:hover {
+            background: #2f80ed;
+        }
+
+        /* Alerts card */
+        #operators div {
+            margin-top: 6px;
+            font-weight: bold;
+            color: #d9534f;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>Dashboard Température & Humidité (DHT11)</h1>
+
+<div class="container">
+
+    <!-- Carte Température -->
+    <div class="card">
+        <div class="header">🌡 Température</div>
+        <div id="temp" class="value">-- °C</div>
+        <span id="tempTime" class="time">--</span>
+        <button onclick="location.href='/graph_temp/'">Voir graphe température</button>
+    </div>
+
+    <!-- Carte Humidité -->
+    <div class="card">
+        <div class="header">💧 Humidité</div>
+        <div id="hum" class="value">-- %</div>
+        <span id="humTime" class="time">--</span>
+        <button onclick="location.href='/graph_hum/'">Voir graphe humidité</button>
+    </div>
+
+    <!-- Carte Alertes -->
+    <div class="card">
+        <div class="header">⚠ Incidents & Alertes</div>
+        <div id="incident-status">Aucun incident</div>
+        <div id="alert-counter" style="margin-top:10px;">Compteur : 0</div>
+
+        <div id="operators">
+            <div id="op1" style="display:none;">Opérateur 1</div>
+            <div id="op2" style="display:none;">Opérateur 2</div>
+            <div id="op3" style="display:none;">Opérateur 3</div>
+        </div>
+    </div>
+
+</div>
+
+<script src="/static/js/app.js"></script>
+<script src="/static/js/dashboard.js"></script>
+
+</body>
+</html>
