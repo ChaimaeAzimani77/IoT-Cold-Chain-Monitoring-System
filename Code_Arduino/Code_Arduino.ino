@@ -10,11 +10,11 @@
 DHT dht(DHTPIN, DHTTYPE);
 
 // --- Configuration WiFi ---
-const char* ssid = "R15-7929";           // Nom du réseau WiFi
-const char* password = "gwtgm64867";     // Mot de passe WiFi
+const char* ssid = "--------";           // Nom du réseau WiFi
+const char* password = "*********";     // Mot de passe WiFi
 
 // --- Configuration MQTT ---
-const char* mqtt_server = "192.168.0.188"; // IP du broker MQTT
+const char* mqtt_server = "192.000.0.000"; // IP du broker MQTT
 const int mqtt_port = 1883;
 const char* mqtt_topic = "capteur/dht11";
 
