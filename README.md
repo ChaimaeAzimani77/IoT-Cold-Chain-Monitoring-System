@@ -98,6 +98,9 @@ Dans les domaines médical, alimentaire et logistique, une rupture de la chaîne
   <img src="Images/mqtt.png" width="500"/>
 </p>
 
+**Commande lance un processus qui écoute les messages MQTT :** python manage.py mqtt_subscriber
+**Commande lance le serveur web Django :** python manage.py runserver 192.000.0.000:8000
+
 ## 🚨 Système d’alerte
 Le système assure une surveillance continue. Dès qu'un dépassement de seuil est détecté (ex: Température > 8°C ou < 2°C), des notifications sont envoyées automatiquement pour permettre une intervention rapide :
 - 📩 **Email** (via le protocole SMTP)
