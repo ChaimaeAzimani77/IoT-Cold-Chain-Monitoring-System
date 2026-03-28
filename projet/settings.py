@@ -127,14 +127,14 @@ EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 EMAIL_HOST = "smtp.gmail.com"
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = "chaimae.elazimani.ensao@ump.ac.ma" 
+EMAIL_HOST_USER = "nom.prenom@gmail.com" 
 # ⚠️ ton adresse 
-EMAIL_HOST_PASSWORD = "knue fscn egnt olzp" # pas ton vrai mot de passe 
-TELEGRAM_BOT_TOKEN = "7117787679:AAGKA1FIh_kSaXgo3cEQRSTj1fOX67i9t9Y" # ← token 
-TELEGRAM_CHAT_ID = "7326039297" # ← id utilisateur/groupe
+EMAIL_HOST_PASSWORD = "*** *** *** ***" # pas ton vrai mot de passe 
+TELEGRAM_BOT_TOKEN = "58888859:AAGhjmoiuh_kSaXgo3cEQRghjkl845t9Y" # ← token 
+TELEGRAM_CHAT_ID = "8888888888888" # ← id utilisateur/groupe
 
 # Alerte (Twilio)
 TWILIO_ACCOUNT_SID = 'AC3f7e8c0d2e562df833e485fd605162c1'
 TWILIO_AUTH_TOKEN = '42f6d5c985bf361606b6ce2b38c82f4c'
-TWILIO_PHONE_NUMBER = '+17179358524' # numero de twilio
-TWILIO_WHATSAPP_NUMBER = 'whatsapp:+14155238886'
+TWILIO_PHONE_NUMBER = '+11111111111' # numero de twilio
+TWILIO_WHATSAPP_NUMBER = 'whatsapp:+055411111147'
