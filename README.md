@@ -1,137 +1,100 @@
 # ❄️ IoT Cold Chain Monitoring System
 
 ## 📝 Description
-Ce projet consiste à concevoir un système IoT intelligent de surveillance de la chaîne du froid destiné aux laboratoires d’analyses médicales.
+Ce projet consiste à concevoir un **système IoT intelligent et automatisé** pour la surveillance stricte de la chaîne du froid, conçu spécifiquement pour les **laboratoires d’analyses médicales**. Il permet le suivi en temps réel de la température et de l’humidité afin d'assurer la conservation optimale des produits hautement sensibles (échantillons biologiques et chimiques).
+La plage de conservation de ces échantillons est strictement définie **entre 2°C et 8°C**.
 
-Il permet de surveiller en temps réel la température et l’humidité afin de garantir la conservation optimale des échantillons biologiques et chimiques (2°C à 8°C).
-
----
-
-## 👩‍💻 Réalisé par
-- El Azimani Chaimae  
-- Bouras Jihane  
-
----
+## 👩‍💻 Réalisé par :
+- **El Azimani Chaimae**
+- **Bouras Jihane**
 
 ## 📌 Problématique
-Dans les domaines médical, pharmaceutique et alimentaire, une rupture de la chaîne du froid peut entraîner des pertes importantes et des risques critiques.
-
-Il est donc nécessaire de mettre en place un système de surveillance continue avec alertes automatiques.
-
----
+Dans les domaines médical, alimentaire et logistique, une rupture de la chaîne du froid peut entraîner des pertes importantes et fausser les résultats d'analyses. Il est donc essentiel de surveiller en continu les conditions environnementales et d’alerter rapidement en cas d’anomalie (surtout la nuit ou les week-ends).
 
 ## 🎯 Objectifs
-- Mesurer la température et l’humidité en temps réel  
-- Transmettre les données via IoT  
-- Stocker les données dans une base de données  
-- Visualiser les données via une interface web  
-- Générer des graphiques dynamiques  
-- Envoyer des alertes en cas de dépassement de seuil  
-- Assurer la traçabilité des mesures  
+- 🌡️ Mesurer la température et l’humidité en temps réel
+- 💻 Visualiser les données via une interface web dynamique
+- 🗄️ Stocker les données de manière sécurisée dans une base de données
+- 🚨 Envoyer des alertes instantanées en cas de dépassement de seuil
+- 📜 Assurer la traçabilité complète des mesures et des incidents
 
----
+## 🧠 Architecture & Fonctionnement
 
-# ⚙️ Fonctionnement global
-- Capteur DHT11 mesure température et humidité  
-- ESP8266 / ESP32 envoie les données  
-- Communication via MQTT / HTTP  
-- Backend Django traite les données  
-- Stockage dans base de données  
-- Dashboard web pour visualisation  
-- Alertes Email + Telegram en temps réel  
+### ⚙️ Flux de données :
+- **Acquisition** : Le capteur DHT11 mesure la température et l’humidité.
+- **Transmission** : L’ESP envoie les données via les protocoles MQTT / HTTP.
+- **Traitement** : Le backend Django (API) réceptionne, traite et stocke les données dans la base de données.
+- **Visualisation** : Les données sont affichées sur un Dashboard Web dynamique avec des graphiques évolutifs.
+- **Notification** : Le système d'alerte surveille les données en continu et envoie des notifications (Email & Telegram) en cas d'anomalie.
 
----
+### 📐 Conception SysML :
+**Diagramme d’Exigences :**
+<p align="center">
+  <img src="Images/Giagramme_SysML.png" width="600"/>
+</p>
 
-# 🔌 Partie Hardware
+**Diagramme de cas d’utilisation :**
+<p align="center">
+  <img src="Images/SysML.png" width="600"/>
+</p>
 
-## 🧩 Composants utilisés
-- ESP8266 / ESP32  
-- DHT11 (capteur température & humidité)  
-- Câbles de connexion  
-- Alimentation électrique  
+## 🛠️ Matériel & Logiciel
 
----
+### 🔌 Partie Matérielle (Hardware) :
+- **Microcontrôleur** : ESP8266 / ESP32
+- **Capteur** : DHT11 (Température & Humidité)
+- **Câblage** : Câbles de connexion divers (Jumpers)
+- **Énergie** : Alimentation électrique classique
 
-# 💻 Partie Software
+### 💻 Partie Logicielle (Software) :
+| Technologie | Utilisation |
+|---|---|
+| **Python (Django)** | Développement Backend & Création de l'API |
+| **SQLite / MySQL** | Gestion de la Base de données |
+| **HTML / CSS / JavaScript** | Création de l'Interface utilisateur (Frontend) |
+| **Chart.js** | Génération des graphiques dynamiques |
+| **MQTT / HTTP** | Protocoles de communication IoT |
+| **Arduino IDE** | Programmation du microcontrôleur ESP |
+| **Telegram API** | Envoi de notifications sur mobile |
+| **SMTP (Gmail)** | Serveur pour l'envoi d’emails d'alerte |
 
-## 🧾 Technologies utilisées
+## 📊 Interface Web et Tableau de Bord
 
-### Backend
-- Python (Django)
-- API REST
+### 🔐 Connexion & Dashboard Principal :
+<p align="center">
+  <img src="Images/connexion.png" width="400"/>
+  <img src="Images/dashboard (2).png" width="400"/>
+</p>
 
-### Base de données
-- SQLite / MySQL
+### 📈 Suivi des données en temps réel :
+<p align="center">
+  <img src="Images/temperature.png" width="400" alt="Graphique Température"/>
+  <img src="Images/humidite.png" width="400" alt="Graphique Humidité"/>
+</p>
 
-### Frontend
-- HTML / CSS / JavaScript
-- Chart.js (graphiques)
+### ⚠️ Gestion des Incidents :
+<p align="center">
+  <img src="Images/incidents.png" width="400"/>
+  <img src="Images/details.png" width="400"/>
+</p>
 
-### IoT & Communication
-- MQTT
-- HTTP
-- Arduino IDE (ESP programming)
+### 📡 Communication (Connexion MQTT) :
+<p align="center">
+  <img src="Images/mqtt.png" width="500"/>
+</p>
 
-### Notifications
-- Telegram API
-- SMTP Gmail
+## 🚨 Système d’alerte
+Le système assure une surveillance continue. Dès qu'un dépassement de seuil est détecté (ex: Température > 8°C ou < 2°C), des notifications sont envoyées automatiquement pour permettre une intervention rapide :
+- 📩 **Email** (via le protocole SMTP)
+- 📱 **Telegram** (via l'API du Bot Telegram)
 
----
+<p align="center">
+  <img src="Images/telegram.png" width="400"/>
+  <img src="Images/gmail.png" width="400"/>
+</p>
 
-# 🧠 Architecture du système
-- ESP (capteurs) → collecte données  
-- MQTT / HTTP → transmission  
-- Django API → traitement  
-- Database → stockage  
-- Web Dashboard → visualisation  
-- Alert System → alertes temps réel  
-
----
-
-# 📐 Conception SysML
-
-## 📌 Diagramme d’exigences
-![SysML Requirements](Images/Giagramme_SysML.png)
-
-## 📌 Diagramme de cas d’utilisation
-![Use Case](Images/SysML.png)
-
----
-
-# 📊 Interface Web
-
-## 🔐 Connexion
-![Login](Images/connexion.png)
-
-## 📊 Dashboard
-![Dashboard](Images/dashboard (2).png)
-
-## 🌡️ Température
-![Temperature](Images/temperature.png)
-
-## 💧 Humidité
-![Humidity](Images/humidite.png)
-
----
-
-# 🚨 Gestion des incidents
-![Incidents](Images/incidents.png)
-![Details](Images/details.png)
-
----
-
-# 📡 MQTT
-![MQTT](Images/mqtt.png)
-
----
-
-# 🚨 Système d’alerte
-- Surveillance continue des capteurs  
-- Détection de dépassement de seuil  
-- Notifications automatiques :
-
-📩 Email (SMTP Gmail)  
-📱 Telegram  
-
-![Telegram](Images/telegram.png)
-![Gmail](Images/gmail.png)
+## 🚀 Perspectives et Améliorations Futures
+Pour rendre ce système encore plus robuste et autonome à l'avenir, les évolutions suivantes sont prévues :
+1. **🔋 Intégration d'une batterie de secours (Onduleur/Powerbank)** : Pour maintenir la surveillance active même en cas de coupure de courant au laboratoire.
+2. **📱 Développement d'une application mobile dédiée** : Pour offrir aux opérateurs une interface plus adaptée aux smartphones et un suivi plus ergonomique en déplacement.
+3. **💬 Alertes par SMS (Module GSM)** : Ajout d'une connectivité cellulaire pour envoyer des SMS d'urgence en cas de panne de la connexion Wi-Fi ou du réseau internet local.
