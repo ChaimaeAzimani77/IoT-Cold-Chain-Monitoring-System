@@ -61,20 +61,33 @@ Dans les domaines médical, alimentaire et logistique, une rupture de la chaîne
 ## 📊 Interface Web et Tableau de Bord
 
 ### 🔐 Connexion & Dashboard Principal :
+**Connexion :**
 <p align="center">
   <img src="Images/connexion (2).png" width="400"/>
+</p>
+
+**Dashboard :**
+<p align="center">
   <img src="Images/dashboard (2).png" width="400"/>
 </p>
 
 ### 📈 Suivi des données en temps réel :
+**Diagramme de Température :**
 <p align="center">
   <img src="Images/temperature.png" width="400" alt="Graphique Température"/>
+</p>
+
+**Diagramme d' Humidité :**
+<p align="center">
   <img src="Images/humidite.png" width="400" alt="Graphique Humidité"/>
 </p>
 
 ### ⚠️ Gestion des Incidents :
 <p align="center">
   <img src="Images/incidents.png" width="400"/>
+</p>
+
+<p align="center">
   <img src="Images/details.png" width="400"/>
 </p>
 
