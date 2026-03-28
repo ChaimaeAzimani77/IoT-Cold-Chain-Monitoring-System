@@ -28,7 +28,7 @@ class Dhtviews(generics.CreateAPIView):
         temp = instance.temp
         aujourd_hui = date.today().isoformat()
 
-        if temp > 20:
+        if temp > 2:
             # On vérifie si on a déjà envoyé une alerte aujourd'hui
             if not dernieres_alertes.get(aujourd_hui, False):
 
@@ -38,7 +38,7 @@ class Dhtviews(generics.CreateAPIView):
                         subject="⚠️ Alerte Température élevée",
                         message=f"La température a dépassé 19°C : {temp:.1f}°C à {instance.dt}",
                         from_email=settings.EMAIL_HOST_USER,
-                        recipient_list=["chaimae.elazimani.ensao@ump.ac.ma"],
+                        recipient_list=["nom.prenom@gmail.com"],
                         fail_silently=True,
                     )
                 except Exception as e:
