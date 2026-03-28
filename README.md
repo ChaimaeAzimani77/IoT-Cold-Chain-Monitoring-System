@@ -28,12 +28,12 @@ Dans les domaines médical, alimentaire et logistique, une rupture de la chaîne
 - **Notification** : Le système d'alerte surveille les données en continu et envoie des notifications (Email & Telegram) en cas d'anomalie.
 
 ### 📐 Conception SysML :
-**Diagramme d’Exigences :**
+- ** Diagramme d’Exigences :**
 <p align="center">
   <img src="Images/Giagramme_SysML.png" width="600"/>
 </p>
 
-**Diagramme de cas d’utilisation :**
+- ** Diagramme de cas d’utilisation :**
 <p align="center">
   <img src="Images/SysML.png" width="600"/>
 </p>
@@ -61,23 +61,23 @@ Dans les domaines médical, alimentaire et logistique, une rupture de la chaîne
 ## 📊 Interface Web et Tableau de Bord
 
 ### 🔐 Connexion & Dashboard Principal :
-**- Connexion :**
+- ** Connexion :**
 <p align="center">
-  <img src="Images/connexion (2).png" width="400"/>
+  <img src="Images/connexion (2).png" width="300"/>
 </p>
 
-**- Dashboard :**
+- ** Dashboard :**
 <p align="center">
-  <img src="Images/dashboard (2).png" width="400"/>
+  <img src="Images/dashboard (2).png" width="600"/>
 </p>
 
 ### 📈 Suivi des données en temps réel :
-- **Diagramme de Température :**
+- ** Diagramme de Température :**
 <p align="center">
   <img src="Images/temperature.png" width="400" alt="Graphique Température"/>
 </p>
 
-- **Diagramme d' Humidité :**
+- ** Diagramme d' Humidité :**
 <p align="center">
   <img src="Images/humidite.png" width="400" alt="Graphique Humidité"/>
 </p>
@@ -90,7 +90,7 @@ Dans les domaines médical, alimentaire et logistique, une rupture de la chaîne
 
 - ** Details des incidents :**
 <p align="center">
-  <img src="Images/details.png" width="400"/>
+  <img src="Images/details.png" width="200"/>
 </p>
 
 ### 📡 Communication (Connexion MQTT) :
