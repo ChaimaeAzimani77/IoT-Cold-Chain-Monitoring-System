@@ -62,7 +62,7 @@ Dans les domaines médical, alimentaire et logistique, une rupture de la chaîne
 
 ### 🔐 Connexion & Dashboard Principal :
 <p align="center">
-  <img src="Images/connexion.png" width="400"/>
+  <img src="Images/connexion (2).png" width="400"/>
   <img src="Images/dashboard (2).png" width="400"/>
 </p>
 
