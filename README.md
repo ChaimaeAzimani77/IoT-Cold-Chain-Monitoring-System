@@ -61,32 +61,34 @@ Dans les domaines médical, alimentaire et logistique, une rupture de la chaîne
 ## 📊 Interface Web et Tableau de Bord
 
 ### 🔐 Connexion & Dashboard Principal :
-**Connexion :**
+**- Connexion :**
 <p align="center">
   <img src="Images/connexion (2).png" width="400"/>
 </p>
 
-**Dashboard :**
+**- Dashboard :**
 <p align="center">
   <img src="Images/dashboard (2).png" width="400"/>
 </p>
 
 ### 📈 Suivi des données en temps réel :
-**Diagramme de Température :**
+**- Diagramme de Température :**
 <p align="center">
   <img src="Images/temperature.png" width="400" alt="Graphique Température"/>
 </p>
 
-**Diagramme d' Humidité :**
+**- Diagramme d' Humidité :**
 <p align="center">
   <img src="Images/humidite.png" width="400" alt="Graphique Humidité"/>
 </p>
 
 ### ⚠️ Gestion des Incidents :
+**- Archive d'incidents :**
 <p align="center">
   <img src="Images/incidents.png" width="400"/>
 </p>
 
+**- Details des incidents :**
 <p align="center">
   <img src="Images/details.png" width="400"/>
 </p>
@@ -99,10 +101,12 @@ Dans les domaines médical, alimentaire et logistique, une rupture de la chaîne
 ## 🚨 Système d’alerte
 Le système assure une surveillance continue. Dès qu'un dépassement de seuil est détecté (ex: Température > 8°C ou < 2°C), des notifications sont envoyées automatiquement pour permettre une intervention rapide :
 - 📩 **Email** (via le protocole SMTP)
-- 📱 **Telegram** (via l'API du Bot Telegram)
-
 <p align="center">
-  <img src="Images/telegram.png" width="400"/>
+  <img src="Images/gmail.png" width="400"/>
+</p>
+
+- 📱 **Telegram** (via l'API du Bot Telegram)
+<p align="center">
   <img src="Images/gmail.png" width="400"/>
 </p>
 
