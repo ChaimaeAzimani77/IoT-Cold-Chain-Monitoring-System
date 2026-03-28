@@ -72,23 +72,23 @@ Dans les domaines médical, alimentaire et logistique, une rupture de la chaîne
 </p>
 
 ### 📈 Suivi des données en temps réel :
-**- Diagramme de Température :**
+- **Diagramme de Température :**
 <p align="center">
   <img src="Images/temperature.png" width="400" alt="Graphique Température"/>
 </p>
 
-**- Diagramme d' Humidité :**
+- **Diagramme d' Humidité :**
 <p align="center">
   <img src="Images/humidite.png" width="400" alt="Graphique Humidité"/>
 </p>
 
 ### ⚠️ Gestion des Incidents :
-**- Archive d'incidents :**
+- ** Archive d'incidents :**
 <p align="center">
   <img src="Images/incidents.png" width="400"/>
 </p>
 
-**- Details des incidents :**
+- ** Details des incidents :**
 <p align="center">
   <img src="Images/details.png" width="400"/>
 </p>
