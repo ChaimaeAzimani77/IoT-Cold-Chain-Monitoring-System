@@ -12,11 +12,11 @@ La plage de conservation de ces échantillons est strictement définie **entre 2
 Dans les domaines médical, alimentaire et logistique, une rupture de la chaîne du froid peut entraîner des pertes importantes et fausser les résultats d'analyses. Il est donc essentiel de surveiller en continu les conditions environnementales et d’alerter rapidement en cas d’anomalie (surtout la nuit ou les week-ends).
 
 ## 🎯 Objectifs
-- 🌡️ Mesurer la température et l’humidité en temps réel
-- 💻 Visualiser les données via une interface web dynamique
-- 🗄️ Stocker les données de manière sécurisée dans une base de données
-- 🚨 Envoyer des alertes instantanées en cas de dépassement de seuil
-- 📜 Assurer la traçabilité complète des mesures et des incidents
+-  Mesurer la température et l’humidité en temps réel
+-  Visualiser les données via une interface web dynamique
+-  Stocker les données de manière sécurisée dans une base de données
+-  Envoyer des alertes instantanées en cas de dépassement de seuil
+-  Assurer la traçabilité complète des mesures et des incidents
 
 ## 🧠 Architecture & Fonctionnement
 
@@ -28,12 +28,12 @@ Dans les domaines médical, alimentaire et logistique, une rupture de la chaîne
 - **Notification** : Le système d'alerte surveille les données en continu et envoie des notifications (Email & Telegram) en cas d'anomalie.
 
 ### 📐 Conception SysML :
-- ** Diagramme d’Exigences :**
+- **Diagramme d’Exigences :**
 <p align="center">
   <img src="Images/Giagramme_SysML.png" width="600"/>
 </p>
 
-- ** Diagramme de cas d’utilisation :**
+- **Diagramme de cas d’utilisation :**
 <p align="center">
   <img src="Images/SysML.png" width="600"/>
 </p>
@@ -61,34 +61,34 @@ Dans les domaines médical, alimentaire et logistique, une rupture de la chaîne
 ## 📊 Interface Web et Tableau de Bord
 
 ### 🔐 Connexion & Dashboard Principal :
-- ** Connexion :**
+- **Connexion :**
 <p align="center">
   <img src="Images/connexion (2).png" width="300"/>
 </p>
 
-- ** Dashboard :**
+- **Dashboard :**
 <p align="center">
   <img src="Images/dashboard (2).png" width="600"/>
 </p>
 
 ### 📈 Suivi des données en temps réel :
-- ** Diagramme de Température :**
+- **Diagramme de Température :**
 <p align="center">
   <img src="Images/temperature.png" width="400" alt="Graphique Température"/>
 </p>
 
-- ** Diagramme d' Humidité :**
+- **Diagramme d' Humidité :**
 <p align="center">
   <img src="Images/humidite.png" width="400" alt="Graphique Humidité"/>
 </p>
 
 ### ⚠️ Gestion des Incidents :
-- ** Archive d'incidents :**
+- **Archive d'incidents :**
 <p align="center">
   <img src="Images/incidents.png" width="400"/>
 </p>
 
-- ** Details des incidents :**
+- **Details des incidents :**
 <p align="center">
   <img src="Images/details.png" width="200"/>
 </p>
@@ -112,6 +112,6 @@ Le système assure une surveillance continue. Dès qu'un dépassement de seuil e
 
 ## 🚀 Perspectives et Améliorations Futures
 Pour rendre ce système encore plus robuste et autonome à l'avenir, les évolutions suivantes sont prévues :
-1. **🔋 Intégration d'une batterie de secours (Onduleur/Powerbank)** : Pour maintenir la surveillance active même en cas de coupure de courant au laboratoire.
-2. **📱 Développement d'une application mobile dédiée** : Pour offrir aux opérateurs une interface plus adaptée aux smartphones et un suivi plus ergonomique en déplacement.
-3. **💬 Alertes par SMS (Module GSM)** : Ajout d'une connectivité cellulaire pour envoyer des SMS d'urgence en cas de panne de la connexion Wi-Fi ou du réseau internet local.
+1. **Intégration d'une batterie de secours (Onduleur/Powerbank)** : Pour maintenir la surveillance active même en cas de coupure de courant au laboratoire.
+2. **Développement d'une application mobile dédiée** : Pour offrir aux opérateurs une interface plus adaptée aux smartphones et un suivi plus ergonomique en déplacement.
+3. **Alertes par SMS (Module GSM)** : Ajout d'une connectivité cellulaire pour envoyer des SMS d'urgence en cas de panne de la connexion Wi-Fi ou du réseau internet local.
